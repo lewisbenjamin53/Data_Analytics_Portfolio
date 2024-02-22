@@ -14,13 +14,11 @@ import requests
 logging.basicConfig(level=logging.INFO, filename='sftp_download.log',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Database Connection Setup
-db_conn_str = 'DRIVER={};SERVER=;DATABASE=;UID=;PWD='  # Fill in your database connection details
+db_conn_str = 'DRIVER={};SERVER=;DATABASE=;UID=;PWD=' 
 sql_query = "SELECT application_number FROM import_table"
 
-# Pushover Notification Setup
-pushover_token = 'your_token'
-pushover_user = 'your_user_key'
+pushover_token = ''
+pushover_user = ''
 
 def send_pushover_notification(message, title='Alert'):
     """Send notification via Pushover."""
