@@ -10,17 +10,13 @@ import requests
 import logging
 from datetime import datetime
 
-# Setup logging
 logging.basicConfig(filename='data_upload_log.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Database connection parameters
 db_connection_string = "DRIVER={};SERVER=;DATABASE=;UID=;PWD="
 
-# SFTP connection parameters
 sftp_info = {'host': '', 'username': '', 'password': ''}
 
-# Pushover notification parameters
 pushover_user = ""
 pushover_token = ""
 
